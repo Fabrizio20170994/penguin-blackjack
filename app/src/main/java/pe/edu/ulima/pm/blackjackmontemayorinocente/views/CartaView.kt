@@ -13,10 +13,6 @@ class CartaView: View {
     val paint : Paint? = null
     var width : Int? = null
     var height : Int? = null
-    val location = IntArray(2)
-    var position : Unit? = null
-    var xPosition : Int? = null
-    var yPosition : Int? = null
     var centreX : Float? = null
     var centreY : Float? = null
     // Creamos un Bitmap a partir del Pingüino
@@ -26,21 +22,17 @@ class CartaView: View {
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+        // Obtenemos las medidas y centro del View
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
         width = View.MeasureSpec.getSize(widthMeasureSpec)
         height = View.MeasureSpec.getSize(heightMeasureSpec)
         centreX=x + width!!/ 2
         centreY=y + height!! / 2
-        /*position = this.getLocationOnScreen(location)
-        xPosition = location[0]
-        yPosition = location[1]*/
     }
 
     override fun onDraw(canvas: Canvas) {
-        // Escalamos el pingüino y obtenemos el centro del Canvas
+        // Escalamos el Pingüino
         val  resized: Bitmap = Bitmap.createScaledBitmap(img!!, width!! / 2, width!! / 2, true)
-
-
         // Color de Fondo
         canvas.drawRGB(255, 153, 61)
         // Dibujamos el Pingüino

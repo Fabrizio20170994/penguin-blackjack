@@ -33,27 +33,32 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:layout_marginHorizontal="5dp"
-        android:layout_weight="8">
+        android:layout_weight="8"
+        android:id="@+id/mesa">
         <pe.edu.ulima.pm.blackjackmontemayorinocente.views.CartaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"/>
+            android:layout_marginHorizontal="3dp"
+            android:id="@+id/cartaMesa1"/>
         <pe.edu.ulima.pm.blackjackmontemayorinocente.views.CartaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"/>
+            android:layout_marginHorizontal="3dp"
+            android:id="@+id/cartaMesa2"/>
         <pe.edu.ulima.pm.blackjackmontemayorinocente.views.CartaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"/>
+            android:layout_marginHorizontal="3dp"
+            android:id="@+id/cartaMesa3"/>
         <pe.edu.ulima.pm.blackjackmontemayorinocente.views.CartaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"/>
+            android:layout_marginHorizontal="3dp"
+            android:id="@+id/cartaMesa4"/>
     </LinearLayout>
 
     <TextView
@@ -77,22 +82,26 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"/>
+            android:layout_marginHorizontal="3dp"
+            android:id="@+id/cartaJugador1"/>
         <pe.edu.ulima.pm.blackjackmontemayorinocente.views.CartaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"/>
+            android:layout_marginHorizontal="3dp"
+            android:id="@+id/cartaJugador2"/>
         <pe.edu.ulima.pm.blackjackmontemayorinocente.views.CartaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"/>
+            android:layout_marginHorizontal="3dp"
+            android:id="@+id/cartaJugador3"/>
         <pe.edu.ulima.pm.blackjackmontemayorinocente.views.CartaView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"/>
+            android:layout_marginHorizontal="3dp"
+            android:id="@+id/cartaJugador4"/>
     </LinearLayout>
 
     <TextView
@@ -103,7 +112,8 @@
         android:textSize="22sp"
         android:layout_marginLeft="10dp"
         android:layout_marginVertical="35dp"
-        android:layout_weight="3"/>
+        android:layout_weight="3"
+        android:id="@+id/mensaje"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -115,13 +125,15 @@
                 android:layout_height="match_parent"
                 android:text="Quedar"
                 android:layout_marginHorizontal="8dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:id="@+id/quedar"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:text="Reiniciar"
                 android:layout_marginHorizontal="8dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:id="@+id/reiniciar"/>
     </LinearLayout>
 
 </LinearLayout>

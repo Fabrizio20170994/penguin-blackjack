@@ -20,7 +20,7 @@ class CartaView: View {
     var centreY : Float? = null
     private var listener : OnCardClickListener? = null
     // Creamos un Bitmap a partir del Pingüino
-    val img: Bitmap? = BitmapFactory.decodeResource(resources, R.drawable.pinguino)
+    val img: Bitmap? = BitmapFactory.decodeResource(resources, R.drawable.doge)
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
         // Por xml
         paint = Paint()
@@ -69,8 +69,8 @@ class CartaView: View {
             // Color de Fondo
             canvas.drawRGB(255, 153, 61)
             // Escalamos el Pingüino
-            val  resized: Bitmap = Bitmap.createScaledBitmap(img!!, width!! / 2, width!! / 2, true)
-            canvas.drawBitmap(resized, centreX!! / 2, centreY!! - width!! / 4, paint)
+            val  resized: Bitmap = Bitmap.createScaledBitmap(img!!, width!! / 2 + width!! / 4, width!! / 2 + width!! / 4, true)
+            canvas.drawBitmap(resized, centreX!!/2-centreX!!/4, centreY!! - width!! / 3, paint)
         }
     }
 

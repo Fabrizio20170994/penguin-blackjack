@@ -26,7 +26,7 @@ class CartaView: View {
         paint = Paint()
     }
 
-    fun setOnCardClickListener(listener: OnCardClickListener) {
+    fun setOnCardClickListener(listener: OnCardClickListener?) {
         this.listener = listener
     }
 

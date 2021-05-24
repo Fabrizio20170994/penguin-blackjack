@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import pe.edu.ulima.pm.blackjackmontemayorinocente.fragments.GameFragment
+import pe.edu.ulima.pm.blackjackmontemayorinocente.fragments.StatsFragment
 
 
 class GameSliderAdapter : FragmentStatePagerAdapter {
@@ -14,6 +15,7 @@ class GameSliderAdapter : FragmentStatePagerAdapter {
 
         // Creamos arraylist de fragments con su data de producto
         fragmentList = ArrayList()
+        fragmentList!!.add(StatsFragment())
         fragmentList!!.add(GameFragment())
     }
 

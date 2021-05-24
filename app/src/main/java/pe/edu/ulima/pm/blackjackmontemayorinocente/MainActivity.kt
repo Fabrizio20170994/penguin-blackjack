@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         pager = findViewById(R.id.pager)
         pager!!.adapter = GameSliderAdapter(supportFragmentManager)
-
+        pager!!.setCurrentItem(1)
     }
 
 

@@ -19,7 +19,7 @@ class CartaView: View {
     var centreX : Float? = null
     var centreY : Float? = null
     private var listener : OnCardClickListener? = null
-    // Creamos un Bitmap a partir del Pingüino
+    // Creamos un Bitmap a partir del Doge
     val img: Bitmap? = BitmapFactory.decodeResource(resources, R.drawable.doge)
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
         // Por xml
@@ -64,11 +64,11 @@ class CartaView: View {
             paint!!.strokeWidth = 5f
             canvas.drawRect(rectf,paint!!)
         }
-        // Sino, dibujamos el Pingüino
+        // Sino, dibujamos el Doge
         else {
             // Color de Fondo
             canvas.drawRGB(255, 153, 61)
-            // Escalamos el Pingüino
+            // Escalamos el Doge
             val  resized: Bitmap = Bitmap.createScaledBitmap(img!!, width!! / 2 + width!! / 4, width!! / 2 + width!! / 4, true)
             canvas.drawBitmap(resized, centreX!!/2-centreX!!/4, centreY!! - width!! / 3, paint)
         }

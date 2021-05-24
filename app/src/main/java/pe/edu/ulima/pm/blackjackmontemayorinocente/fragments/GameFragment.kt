@@ -131,7 +131,7 @@ class GameFragment : Fragment(), OnCardClickListener {
                     }
                     else -> {
                         // Si todas las cartas están reveladas se decide por quien tenga más
-                        if (getPlayerCards().all { carta -> carta.number != null }) {
+                        if (getPlayerCards().all { carta -> carta.number != null } || getTableCards().all { carta -> carta.number != null }) {
                             val playerCount = getCount(getPlayerCards())
                             val tableCount = getCount(getTableCards())
                             if (playerCount == tableCount) {
